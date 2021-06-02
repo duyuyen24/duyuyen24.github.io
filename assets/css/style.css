@@ -124,10 +124,12 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 9997;
-  transition: all 0.5s;
   padding: 15px;
+   z-index: 9997;
+  transition: all 0.5s;
+ 
   overflow-y: auto;
+  background-color: #15202B;
 }
 
 @media (max-width: 992px) {
@@ -151,9 +153,17 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation 
 */
+#hero-container, #about-container, #skills, #services-container, #resume, #portfolio-container, #contact {
+  margin-left: 100px;
+}
+.social-links {
+  margin-bottom: 10px;
+  margin-left: 200px;
+}
 .nav-menu {
   padding: 0;
   display: block;
+
 }
 
 .nav-menu * {
@@ -192,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #45505b;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .nav-menu a {
     width: 56px;
   }
@@ -200,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     color: #fff;
   }
-}
+} */
 
 .nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
   color: #fff;
@@ -214,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover, .nav-menu li:hover > a {
   width: 100%;
   color: #fff;
-}
+} 
 
 .nav-menu a:hover span, .nav-menu li:hover > a span {
   display: block;
@@ -223,6 +233,25 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Mobile Navigation 
 */
+@media only screen and (max-width: 992px) {
+  /* @media (min-width: 992px) {
+    .nav-menu a {
+      width: 56px;
+    }
+    .nav-menu a span {
+      display: none;
+      color: #fff;
+    }
+  } */
+
+  #hero-container, #about, #skills, #services, #resume, #portfolio, #contact {
+    margin-left: 0 !important;
+  }
+  .social-links {
+    margin: 0 !important;
+  }
+
+}
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
@@ -356,7 +385,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #15202B;
 }
 
 .section-title h2::before {
@@ -463,7 +492,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -754,8 +783,8 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 85px;
-  margin-right: 3em;
+  padding-top: 80px;
+  margin-right: 5em;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -813,19 +842,24 @@ section {
 }
 
 .portfolio-details .portfolio-description p {
-  padding: 0;
+  padding: 0px;
 }
-
+.portfolio-details .portfolio-description {
+  padding-left: 20px;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  width: 400px;
 }
+
 
 .services .icon-box .icon {
   margin: 0 auto;
@@ -890,7 +924,7 @@ section {
 }
 
 .services .iconbox-orange i {
-  color: #ffa76e;
+  color: #2CA6A4;
 }
 
 .services .iconbox-orange:hover .icon i {
@@ -898,7 +932,7 @@ section {
 }
 
 .services .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
+  fill: #2CA6A4;
 }
 
 .services .iconbox-pink i {
@@ -1064,7 +1098,7 @@ section {
 }
 
 .contact .info .email, .contact .info .phone {
-  margin-top: 40px;
+  margin: 00px;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
@@ -1176,7 +1210,7 @@ section {
   color: #45505b;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 #footer h3 {
@@ -1192,10 +1226,6 @@ section {
   font-size: 15;
   font-style: italic;
   padding: 0;
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links {
   margin: 0 0 40px 0;
 }
 
@@ -1226,4 +1256,8 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+#about, #services, #portfolio {
+  background-color:#f7f8f9;
 }
