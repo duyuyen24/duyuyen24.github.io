@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   } */
 
-  #hero-container, #about, #skills, #services, #resume, #portfolio, #contact {
+  #hero-container, #about-container, #skills, #services-container, #resume, #portfolio-container, #contact  {
     margin-left: 0 !important;
   }
   .social-links {
