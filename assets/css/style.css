@@ -443,7 +443,11 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
+#activites a{
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
