@@ -460,7 +460,9 @@ section {
 #activites a{
   text-decoration: none;
   color: black;
-  font-style: italic;
+}
+#activites a:hover{
+  color: darkgray;
 }
 /*--------------------------------------------------------------
 # Facts
@@ -572,7 +574,9 @@ section {
   font-style: normal;
 }
 
-
+.frechB1:hover {
+ color: rgb(94, 94, 163);
+}
 
 
 /*--------------------------------------------------------------
@@ -635,7 +639,14 @@ section {
   background: #fff;
   border: 2px solid #0563bb;
 }
-
+.resume .resume-item a{
+  text-decoration: none;
+  color: black;
+ 
+}
+.resume .resume-item a:hover{
+  color: darkgray;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
